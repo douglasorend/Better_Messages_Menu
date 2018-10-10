@@ -76,7 +76,8 @@ function BetterMessages_Hook()
 	}
 
 	// Cache the menu we just built for the calling user:
-	echo serialize($cached);
+	$func = function_exists('safe_serialize') ? 'safe_serialize' : 'serialize';
+	echo $func($cached);
 	exit;
 }
 
@@ -100,7 +101,8 @@ function BetterMessages_Menu_Buttons(&$areas)
 		$contents = @file_get_contents($scripturl . '?action=pm;sa=BetterMessages_ucp;u=' . $user_info['id']);
 		if (substr($contents, 0, 2) == 'a:')
 		{
-			$cached = @unserialize($contents);
+			$func = function_exists('safe_unserialize') ? 'safe_unserialize' : 'unserialize';
+			$cached = @$func($contents);
 			cache_put_data('BetterMessages_' . $user_info['id'], $cached, 86400 * 7);
 		}
 	}

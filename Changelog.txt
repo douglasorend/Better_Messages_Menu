@@ -1,2 +1,5 @@
+v1.0.1 - November 23, 2017
+o Altered code to use [b]safe_serialize[/b] when that function is available.
+
 v1.0 - November 16th, 2017
 o Initial Release
