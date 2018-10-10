@@ -4,7 +4,7 @@
 	<id>dougiefresh:BetterMessages</id>
 	<name>Better Messages Menu</name>
 	<type>modification</type>
-	<version>1.3</version>
+	<version>1.4</version>
 
 	<install for="2.0 - 2.0.99">
 		<readme type="file" parsebbc="true">readme.txt</readme>
@@ -13,6 +13,7 @@
 		<modification>install_20x.xml</modification>
 		<modification>language_english.xml</modification>
 		<require-file name="Subs-BetterMessages.php" destination="$sourcedir" />
+		<redirect timeout="5000" url="?action=admin;area=maintain;sa=routine;activity=cleancache" />
 	</install>
 	<uninstall for="2.0 - 2.0.99">
 		<code>add_remove_hooks.php</code>

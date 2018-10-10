@@ -99,12 +99,9 @@ function BetterMessages_Menu_Buttons(&$areas)
 	{
 		// Force the profile code to build our new My Messages menu:
 		$contents = @file_get_contents($scripturl . '?action=pm;sa=BetterMessages_ucp;u=' . $user_info['id']);
-		if (substr($contents, 0, 2) == 'a:')
-		{
-			$func = function_exists('safe_unserialize') ? 'safe_unserialize' : 'unserialize';
-			$cached = @$func($contents);
-			cache_put_data('BetterMessages_' . $user_info['id'], $cached, 86400 * 7);
-		}
+		$func = function_exists('safe_unserialize') ? 'safe_unserialize' : 'unserialize';
+		$cached = @$func($contents);
+		cache_put_data('BetterMessages_' . $user_info['id'], $cached, 86400 * 7);
 	}
 	if (is_array($cached))
 	{

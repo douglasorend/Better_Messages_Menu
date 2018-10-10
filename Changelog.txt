@@ -1,5 +1,9 @@
+v1.4 - February 17th, 2018
+o Removed possibly unnecessary check from [b]Subs-BetterMessages.php[/b].
+o Added redirect to purge file cache, so fresh information can be gathered.
+
 v1.3 - February 14th, 2018
-o Added option to disable this mod from Profile's "Look and Layout" screen.
+o Added dropdown box in [b]Profile[/b] => [b]Look and Layout[/b] to control mod per user.
 
 v1.2 - February 3rd, 2018
 o Made sure all function names referenced are what they are supposed to be.
