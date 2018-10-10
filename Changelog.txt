@@ -1,3 +1,6 @@
+v1.6 - April 7th, 2018
+o Fixed Spanish Latin translation XML file to properly skip operations.
+
 v1.5 - February 26th, 2018
 o Fixed issue causing long pause each page load.
 o Added Spanish Latin translation, courtsey of [url=https://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee[/url].
