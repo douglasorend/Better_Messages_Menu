@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]BETTER MESSAGES MENU v1.6[/b][/size][/color]
+[center][color=red][size=16pt][b]BETTER MESSAGES MENU v1.7[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=3904]Link to Mod[/url]
 [/center]
 [hr]
@@ -17,7 +17,7 @@ This mod was tested on SMF 2.0.14, but should work on any version of SMF 2.0.x. 
 SMF 2.1 Beta 3 will not be supported by this mod, as this mod seeks to duplicate the new functionality of the SMF 2.1 beta series for the SMF 2.0.x series.
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=6.msg130#msg130]XPtsp.com[/url].
+The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/better-messages-menu/]XPtsp.com[/url].
 
 [color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
 [quote]Copyright (c) 2017 - 2018, Douglas Orend

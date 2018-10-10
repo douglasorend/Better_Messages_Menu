@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>dougiefresh:BetterMessagesMenu</id>
 <name>Better Messages Menu</name>
-<version>1.6</version>
+<version>1.7</version>
 
 <file name="$languagedir/Profile.spanish_latin-utf8" error="skip">
 	<operation>
