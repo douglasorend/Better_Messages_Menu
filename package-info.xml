@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>dougiefresh:BetterMessages</id>
+	<name>Better Messages Menu</name>
+	<type>modification</type>
+	<version>1.0</version>
+
+	<install for="2.0 - 2.0.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<code>add_remove_hooks.php</code>
+		<modification>install_20x.xml</modification>
+		<require-file name="Subs-BetterMessagesMenu.php" destination="$sourcedir" />
+	</install>
+	<uninstall for="2.0 - 2.0.99">
+		<code>add_remove_hooks.php</code>
+		<modification reverse="true">install_20x.xml</modification>
+		<remove-file name="$sourcedir/Subs-BetterMessagesMenu.php" />
+	</uninstall>
+</package-info>
