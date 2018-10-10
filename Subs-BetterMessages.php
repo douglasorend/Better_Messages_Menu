@@ -89,8 +89,8 @@ function BetterMessages_Menu_Buttons(&$areas)
 	if (isset($_GET['action']) && $_GET['action'] == 'pm' && isset($_GET['area']) && $_GET['area'] == 'BetterMessages_ucp')
 		return;
 
-	// Are you a guest, or can't send PMs for some reason?  Then why bother with it....
-	if (empty($user_info['id']))
+	// Are you a guest, can't send PMs, or mod turned off?  Then why bother?
+	if (empty($user_info['id']) || !allowedTo('pm_read') || empty($user_info['bmm_mode']))
 		return;
 
 	// Attempt to get the cached Messages menu:
@@ -107,7 +107,24 @@ function BetterMessages_Menu_Buttons(&$areas)
 		}
 	}
 	if (is_array($cached))
+	{
+		if ($user_info['bmm_mode'] == 2)
+			$MyPM['href'] = '#" onclick="return false;';
 		$MyPM['sub_buttons'] = $cached;
+	}
+}
+
+function BetterMessages_Profile(&$profile_fields)
+{
+	global $txt, $user_info;
+
+	$profile_fields['bmm_mode'] = array(
+		'type' => 'select',
+		'label' => $txt['bmm_mode'],
+		'options' => 'global $txt; return array(0 => $txt["bmm_disabled"], 1 => $txt["bmm_enabled"], 2 => $txt["bmm_enabled_no_click"]);',
+		'permission' => 'profile_extra',
+		'value' => $user_info['bmm_mode'],
+	);
 }
 
 ?>
