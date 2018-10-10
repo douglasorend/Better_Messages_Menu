@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]BETTER MESSAGES MENU v1.4[/b][/size][/color]
+[center][color=red][size=16pt][b]BETTER MESSAGES MENU v1.5[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=3904]Link to Mod[/url]
 [/center]
 [hr]
@@ -20,7 +20,7 @@ SMF 2.1 Beta 3 will not be supported by this mod, as this mod seeks to duplicate
 The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=6.msg130#msg130]XPtsp.com[/url].
 
 [color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
-[quote]Copyright (c) 2017, Douglas Orend
+[quote]Copyright (c) 2017 - 2018, Douglas Orend
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

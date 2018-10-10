@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>dougiefresh:BetterMessagesMenu</id>
+<name>Better Messages Menu</name>
+<version>1.4</version>
+
+<file name="$languagedir/Profile.spanish_latin-utf8" error="Skip">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['bpm_mode'] = 'Configuración del menú de mejores perfiles:';
+$txt['bpm_disabled'] = 'Completamente deshabilitado';
+$txt['bpm_enabled'] = 'Habilitado';
+$txt['bpm_enabled_no_click'] = 'Habilitado sin hacer clic';
+]]></add>
+	</operation>
+</file>
+
+<file name="$languagedir/Profile.spanish_latin.php" error="Skip">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['bpm_mode'] = 'Configuraci&oacute;n del menú de mejores perfiles:';
+$txt['bpm_disabled'] = 'Completamente deshabilitado';
+$txt['bpm_enabled'] = 'Habilitado';
+$txt['bpm_enabled_no_click'] = 'Habilitado sin hacer clic';
+]]></add>
+	</operation>
+</file>
+</modification>

@@ -14,7 +14,7 @@ if (!defined('SMF'))
 **********************************************************************************/
 function BetterMessages_Verify_User()
 {
-	if (isset($_GET['action']) && $_GET['action'] == 'pm' && isset($_GET['sa']) && $_GET['sa'] == 'BetterMessages_ucp')
+	if (isset($_GET['action']) && $_GET['action'] == 'pm' && isset($_GET['sa']) && $_GET['sa'] == 'bettermessages_ucp')
 		return isset($_GET['u']) ? (int) $_GET['u'] : 0;
 }
 
@@ -86,7 +86,7 @@ function BetterMessages_Menu_Buttons(&$areas)
 	global $txt, $scripturl, $user_info;
 
 	// Gotta prevent an infinite loop here:
-	if (isset($_GET['action']) && $_GET['action'] == 'pm' && isset($_GET['area']) && $_GET['area'] == 'BetterMessages_ucp')
+	if (isset($_GET['action']) && $_GET['action'] == 'pm' && isset($_GET['area']) && $_GET['area'] == 'bettermessages_ucp')
 		return;
 
 	// Are you a guest, can't send PMs, or mod turned off?  Then why bother?
@@ -97,8 +97,8 @@ function BetterMessages_Menu_Buttons(&$areas)
 	$MyPM = &$areas['pm'];
 	if (!empty($user_info['new_pm']) || ($cached = cache_get_data('BetterMessages_' . $user_info['id'], 86400)) == null)
 	{
-		// Force the profile code to build our new My Messages menu:
-		$contents = @file_get_contents($scripturl . '?action=pm;sa=BetterMessages_ucp;u=' . $user_info['id']);
+		// Force the PM code to build our new My Messages menu:
+		$contents = @file_get_contents($scripturl . '?action=pm;sa=bettermessages_ucp;u=' . $user_info['id']);
 		$func = function_exists('safe_unserialize') ? 'safe_unserialize' : 'unserialize';
 		$cached = @$func($contents);
 		cache_put_data('BetterMessages_' . $user_info['id'], $cached, 86400 * 7);
