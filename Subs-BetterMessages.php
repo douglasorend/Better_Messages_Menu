@@ -95,7 +95,7 @@ function BetterMessages_Menu_Buttons(&$areas)
 
 	// Attempt to get the cached Messages menu:
 	$MyPM = &$areas['pm'];
-	if (!empty($user_settings['new_pm']) || ($cached = cache_get_data('BetterMessages_' . $user_info['id'], 86400)) == null)
+	if (!empty($user_info['new_pm']) || ($cached = cache_get_data('BetterMessages_' . $user_info['id'], 86400)) == null)
 	{
 		// Force the profile code to build our new My Messages menu:
 		$contents = @file_get_contents($scripturl . '?action=pm;sa=BetterMessages_ucp;u=' . $user_info['id']);
