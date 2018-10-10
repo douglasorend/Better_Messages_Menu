@@ -1,3 +1,6 @@
+v1.2 - February 3rd, 2018
+o Made sure all function names referenced are what they are supposed to be.
+
 v1.1 - November 26th, 2017
 o Updated documentation to properly reflect SMF 2.1 Beta 3 status.
 o Fixed [b]package-info.xml[/b] so that [b]Subs-BetterMessages.php[/b] gets installed.
